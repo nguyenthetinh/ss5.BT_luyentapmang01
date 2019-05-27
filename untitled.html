@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<input type="text" id="doiso">
+<input type="button" onclick="ktra();">
+<p id="kq"></p>
+<script>
+    function ktra() {
+        let input = document.getElementById("input").value.split(",");
+        let doiso = document.getElementById("doiso").value.toString();
+        for (let i in input) {
+            if (doiso === input[i]) {
+                document.getElementById("kq").innerHTML = "doi so nam trong mang";
+            } else {
+                document.getElementById("kq").innerHTML = "doi so k nam trong mang";
+            }
+        }
+    }
+</script>
+</body>
+</html>

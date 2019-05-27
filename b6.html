@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[];
+    for (j=0 ; j<10 ;j++){
+        let a=prompt("Nhap so phan tu "+j+" cua mang:");
+        mang.push(a)
+    }
+    alert("mang = "+mang);
+    let a=(prompt("Nhap V:"));
+    for (let i in mang){
+        if (mang[i] == a){
+            alert("V is in the array");
+            break;
+        } else if (i==mang.length -1) {
+            alert("V is not in the array");
+            break;
+        }
+        }
+  // let mang=[1,56,12,3,8,9,45,1,2,11,10,16,78,-5,6,15,18];
+  // let nhapso=prompt("Nhập số cần kiểm tra");
+  // if (mang.toString().indexOf(nhapso) !== -1) {
+  //     document.write(nhapso+" "+"V is in the array");
+  // }
+  // else {
+  //     document.write(nhapso+" "+"V is not in the array");
+  // }
+</script>
+</body>
+</html>

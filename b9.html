@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang1=[];
+    let mang2=[];
+    for (j=0 ; j<10 ;j++){
+        let a=prompt("Nhap so phan tu "+j+" cua mang 1 :");
+        mang1.push(a)
+    }
+    alert("mang1="+mang1);
+    for (j=0 ; j<10 ;j++){
+        let b=prompt("Nhap so phan tu "+j+" cua mang 2 :");
+        mang2.push(b)
+    }
+    alert("mang2="+mang2);
+   let mang3=mang1.concat(mang2);
+    alert("mang3="+mang3)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[12,5,8,9,15,23,36,1,25,17];
+    let Max=mang[0];
+    let tt;
+    for (i=0 ; i<mang.length ; i++){
+        if (Max<mang[i]){
+            Max=mang[i];
+        }
+        if (Max==mang[i]) {
+            tt = i
+        }
+    }
+    console.log("so lon nhat la :  "+Max);
+    console.log("vi tri : "+tt);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[];
+    for (j=0 ; j<10 ;j++){
+        let a=prompt("Nhap so phan tu "+j+" cua mang:");
+        mang.push(a)
+    }
+    mang.sort(function (b,c) {
+        return c-b
+    });
+    alert("mang ="+mang)
+</script>
+</body>
+</html>

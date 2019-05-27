@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[];
+    for (j=0 ; j<10 ;j++){
+        let a=prompt("Nhap so phan tu "+j+" cua mang:");
+        mang.push(a)
+    }
+    alert("mang = "+mang);
+    let a=(prompt("Nhap V:"));
+    let vitri;
+    for (let i in mang){
+        if (mang[i] == a){
+            alert("V is in the array");
+            vitri=i;
+            break
+        } else if (i==mang.length -1) {
+            alert("V is not in the array");
+            break;
+        }
+    }
+    mang.splice(vitri,1);
+    alert(mang)
+
+
+</script>
+</body>
+</html>
